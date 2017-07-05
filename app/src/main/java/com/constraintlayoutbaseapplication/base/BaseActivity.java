@@ -30,12 +30,12 @@ public class BaseActivity extends AppCompatActivity {
         ((ScrollView)findViewById(R.id.base_scroll_view)).setFillViewport(true);
         ConstraintLayout layout = (ConstraintLayout) findViewById(R.id.base_main_layout);
         LayoutInflater inflater = getLayoutInflater();
+//        layout= (ConstraintLayout)inflater.inflate(layoutId, layout,false);
         final View view = inflater.inflate(layoutId, null);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         layout.addView(view, params);
     }
-//    layout = (ConstraintLayout)inflater.inflate(layoutId, (ViewGroup) layout, true);
 //        ButterKnife.bind(this);
 //        view.setOnTouchListener(new View.OnTouchListener() {
 //
